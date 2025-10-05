@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url("desk-with-objects\ \(1\).jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.contact-container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border: 2px solid #045351;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(4, 74, 67, 0.3);
+}
+
+.contact-header {
+  background: linear-gradient(180deg, #044745, #014347);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: white;
+}
+
+.contact-header p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  color: #eee;
+}
+.contact-form {
+  padding: 25px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  background: #fff;
+  border: 2px solid #053e3cff;
+  border-radius: 8px;
+  color: #000;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #0b8f88;
+  box-shadow: 0 0 5px rgba(3, 106, 103, 0.4);
+  background: #e8f0fe; 
+}
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 15px;
+}
+select.form-control:invalid {
+  background-color: #fff; 
+  color: #666;
+}
+
+select.form-control:valid {
+  background-color: #e8f0fe; 
+  color: #000;
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #03595a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #04696b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .contact-container {
+    max-width: 90%;
+  }
+  .contact-header h1 {
+    font-size: 1.6rem;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media(max-width: 480px) {
+  .contact-header {
+    padding: 15px;
+  }
+  .contact-header h1 {
+    font-size: 1.5rem;
+  }
+  .contact-header p {
+    font-size: 0.85rem;
+  }
+  .contact-form {
+    padding: 15px;
+  }
+}
+
